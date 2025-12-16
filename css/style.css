@@ -1,0 +1,130 @@
+/* Configuración General con colores vivos */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); /* Azul profundo vivo */
+    color: #e9ecef;
+}
+
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* Sección Sobre Mí con contraste */
+.sobre_mi {
+    background: rgba(255, 255, 255, 0.05); /* Fondo traslúcido moderno */
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #00d4ff;
+    color: #fff;
+}
+
+/* La Foto de Perfil con efecto neón */
+.yo, .java.logo {
+    border-radius: 50%;
+    border: 4px solid #00d4ff;
+    box-shadow: 0 0 20px #00d4ff, 0 0 40px rgba(0, 212, 255, 0.2);
+    margin: 2rem auto;
+    width: 200px; /* Tamaño optimizado */
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.yo:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 30px #ff00c1, 0 0 60px rgba(255, 0, 193, 0.3);
+    border-color: #ff00c1;
+}
+
+/* Tipografía */
+h1 {
+    font-size: 2.5rem;
+    color: #00d4ff;
+    text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Redes Sociales con colores vibrantes fijos */
+.wrapper {
+    display: flex;
+    list-style: none;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.wrapper .icon {
+    position: relative;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Estilos específicos de cada red (Vivos) */
+.wrapper .facebook {
+    background: #1877f2;
+    color: white;
+}
+
+.wrapper .twitter {
+    background: #1da1f2;
+    color: white;
+}
+
+.wrapper .instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+}
+
+/* Tooltip mejorado */
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -50px;
+    opacity: 1;
+}
+
+.wrapper .icon:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+.proyecto-card:nth-child(3):hover {
+    box-shadow: 0 0 25px rgba(255, 204, 0, 0.6) !important;
+    border-color: #ffcc00 !important;
+}
+
+
+
+
+
